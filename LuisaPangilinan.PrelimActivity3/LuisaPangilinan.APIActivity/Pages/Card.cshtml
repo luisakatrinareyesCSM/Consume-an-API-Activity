@@ -1,0 +1,19 @@
+﻿@page
+@model LuisaPangilinan.APIActivity.Pages.CardModel
+@{
+}
+<form method="get">
+    <div class="form-group">
+        <label asp-for="Definition">Enter word</label>
+        <input type="text" class="form-control" id="@Model.Definition?.Word" placeholder="Word">
+    </div>
+    <div class="form-group">
+
+        <button formmethod="get" type="submit" class="btn">Submit</button>
+    </div>
+</form>
+<ul>
+    <li>Word: @Model.Definition?.Word</li>
+    <li>Word: @Model.Definition?.Phonetics</li>
+    <li>Word: @Model.Definition?.Meaning</li>
+</ul>
